@@ -1,0 +1,100 @@
+body{
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex; /* followong styling done to get the footer to stick to the bottom*/
+    flex-direction: column;
+    height: 100vh;  /* all viewheigh of the page*/
+}
+.container{
+    flex: 1; /* the boilerplate container*/
+}
+
+/* Navigation Bar */
+.navbar{
+    height: 5rem;
+    background-color: white;
+}
+
+.fa-earth-asia{
+    font-size: 1.5rem;
+    color:forestgreen;
+}
+
+.nav-link{
+    color: #000 !important; /*!important used to override the bootstrap styling and forcefully apply custom css*/
+}
+
+/*footer*/
+footer{
+    background-color: #ebebeb;
+}
+.f-info-links a{
+    color: #222;
+    text-decoration: none;
+}
+.f-info-links a:hover{
+    text-decoration: underline;
+}
+.f-info-links{
+    width: 100%;
+}
+.f-info-socials{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-info-socials i{
+    font-size: 1.3rem;
+    margin-right: 0.4rem;
+}
+
+.f-info{
+    vertical-align: middle;
+    text-align: center;
+    height: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+/*Card for all listings*/
+
+.listing-card{
+    border:none !important;
+    margin-bottom: 20px;
+}
+.card-img-top{
+    border-radius: 1rem;
+    width: 100% !important; /*ovveriding the bootstrap stylings since they don't take effect .*/
+    object-fit: cover !important;
+}
+.card-body{
+    padding:0 !important;
+}
+.listing-link{
+    text-decoration: none;
+}
+/* card effects for all listings*/
+.card-img-overlay{
+    font-size: x-small;
+}
+
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: antiquewhite;
+}
+
+/*Edit page*/
+
+.show-img{
+    height: 30vh;
+}
+.btns{
+    display: flex;
+    flex-wrap: wrap;
+}
+.show-card{
+    padding-left: 0;
+    padding-right: 0;
+}

@@ -1,0 +1,40 @@
+<% layout("/layout/boilerplate") -%>
+<body>
+    
+    <!--Bootstrap used to make card layout and customized accordingly, experiment carefully and get styling-->
+    <h3>All Listings</h3><br>
+
+<div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-1"> <!--to set the cards in a row and column-->
+    <%for(listing of allListings){%>
+        <a href="/listings/<%= listing._id %>" class="listing-link">
+            <div class="card col listing-card">
+                <img 
+                src="<%= listing.image %>" 
+                class="card-img-top" 
+                alt="cardImage" 
+                style="height: 20rem;">
+                <div class="card-img-overlay">globetrotter</div>
+                <div class="card-body">
+                <p class="card-text">
+
+                    <b><%= listing.title %> <br></b>
+                    &#8377;<%= listing.price.toLocaleString("en-IN") %> /night
+                </p>
+                  
+                </div>
+              </div>
+        </a>
+    <% } %>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
